@@ -40,19 +40,6 @@
 (mouse-wheel-mode t)
 (xterm-mouse-mode t)
 
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:stipple nil :background "black" :foreground "pale goldenrod" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :foundry "unknown" :family "DejaVu Sans Mono"))))
- '(font-lock-builtin-face ((((class color) (background light)) (:foreground "medium purple"))))
- '(font-lock-constant-face ((((class color) (background light)) (:foreground "medium slate blue"))))
- '(font-lock-string-face ((((class color) (background light)) (:foreground "forest green"))))
- '(font-lock-type-face ((((class color) (background light)) (:foreground "dodger blue"))))
- '(font-lock-variable-name-face ((((class color) (background light)) (:foreground "sienna"))))
- '(region ((((class color) (background dark)) (:background "DarkOliveGreen4")))))
-
 ;; Tell emacs which package to use depending on suffix
 (setq auto-mode-alist
       (append '(("\\.\(cc\|C\|c\|hxx\|hpp\|txx\|h\|cpp\|cxx\|cu\|cuh\)$" . c++-mode)

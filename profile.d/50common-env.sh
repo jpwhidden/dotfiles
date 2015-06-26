@@ -24,6 +24,6 @@ export VISUAL="$EDITOR"
 if [ -r ~/.forward ]; then
     export MAILTO=`cat ~/.forward`
 else
-    export MAILTO=taylor.braun-jones@ge.com
+    export MAILTO=john.p.whidden@ge.com
 fi
 export EMAIL=$MAILTO

@@ -6,8 +6,8 @@ to boostrap user configuration files.
 That command is [~/.local/bin/dotfiles][dotfiles], and this is my "dotfiles"
 Git repo.
 
-[dotfiles]: https://github.com/nocnokneo/dotfiles/blob/master/bin/dotfiles
-[bin]: https://github.com/nocnokneo/dotfiles/tree/master/bin
+[dotfiles]: https://github.com/jpwhidden/dotfiles/blob/master/bin/dotfiles
+[bin]: https://github.com/jpwhidden/dotfiles/tree/master/bin
 
 ## What, exactly, does the "dotfiles" command do?
 
@@ -74,7 +74,7 @@ These things will be installed, but _only_ if they aren't already.
   * htop
 
 ## The ~/ "copy" step
-Any file in the `copy` subdirectory will be copied into `~/`. Any file that _needs_ to be modified with personal information (like [.gitconfig](https://github.com/nocnokneo/dotfiles/blob/master/copy/.gitconfig) which contains an email address and private key) should be _copied_ into `~/`. Because the file you'll be editing is no longer in `~/.dotfiles`, it's less likely to be accidentally committed into your public dotfiles repo.
+Any file in the `copy` subdirectory will be copied into `~/`. Any file that _needs_ to be modified with personal information (like [.gitconfig](https://github.com/jpwhidden/dotfiles/blob/master/copy/.gitconfig) which contains an email address and private key) should be _copied_ into `~/`. Because the file you'll be editing is no longer in `~/.dotfiles`, it's less likely to be accidentally committed into your public dotfiles repo.
 
 ## The ~/ "link" step
 Any file in the `link` subdirectory gets symbolically linked with `ln -s` into `~/`. Edit these, and you change the file in the repo. Don't link files containing sensitive data, or you might accidentally commit that data!
@@ -85,5 +85,6 @@ To keep things easy, the `~/.profile` and `~/.bashrc` and `~/.bash_profile` file
 ## License
 Copyright (c) 2012 "Cowboy" Ben Alman  
 Copyright (c) 2013 Taylor Braun-Jones
+Copyright (c) 2015 JP Whidden
 Licensed under the MIT license.  
 <http://benalman.com/about/license/>

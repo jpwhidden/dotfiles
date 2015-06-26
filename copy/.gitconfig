@@ -19,7 +19,7 @@
 [web]
 	browser = google-chrome
 [user]
-	name = Taylor Braun-Jones
+	name = John Whidden
 [gui]
 	historybrowser = gitk
 [alias]

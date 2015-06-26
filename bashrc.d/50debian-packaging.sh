@@ -1,6 +1,6 @@
 # Variables for dh_* scripts, dch, debuild, etc...
-export DEBEMAIL="taylor@braun-jones.org"
-export DEBFULLNAME="Taylor Braun-Jones"
+export DEBEMAIL="john@whidden.net"
+export DEBFULLNAME="John Whidden"
 
 # Handy shortcut for using quilt within a debian source package tree. Usage:
 #
