@@ -157,7 +157,7 @@ if [[ ! -d ~/.dotfiles ]]; then
   new_dotfiles_install=1
   # ~/.dotfiles doesn't exist? Clone it!
   e_header "Downloading dotfiles"
-  git clone --recursive https://github.com/WendellDuncan/dotfiles.git ~/.dotfiles
+  git clone --recursive https://github.com/jpwhidden/dotfiles.git ~/.dotfiles
   cd ~/.dotfiles
 else
   # Make sure we have the latest files.
@@ -167,8 +167,8 @@ else
 fi
 
 # Always use this identity for the dotfiles repository
-git config user.name  "Wendell Duncan"
-git config user.email wendell.duncan@gmail.com
+git config user.name  "JP Whidden"
+git config user.email john@whidden.net
 
 # Utilities, helpers.
 source ~/.dotfiles/bashrc.d/00setup.sh

@@ -85,9 +85,9 @@
 	helper = gnome-keyring
 	helper = cache --timeout=43200
 [credential "https://github.sw.ge.com"]
-	username = WendellDuncan
+	username = 212049889
 [credential "https://github.com"]
-	username = WendellDuncan
+	username = jpwhidden
 [hub]
 	host = github.sw.ge.com
 [cola]
