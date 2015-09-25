@@ -7,6 +7,10 @@ if [ -d ${HOME}/.local/bin ] ; then
     export PATH="${HOME}/.local/bin:$PATH"
 fi
 
+PATH=$PATH:$HOME/bin:$HOME/git/nemo_mfg:$HOME/git/nemo_tracker_fw/tutils:$HOME/git/elite2/Workstation/superbuild-release/Elite2-build/bin
+
+export PATH
+
 # set EDITOR to the best editor we can find on the system
 preferred_editors="emacs"
 # gedit will suffice if we have a graphical display

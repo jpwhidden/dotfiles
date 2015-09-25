@@ -20,6 +20,7 @@
 	browser = google-chrome
 [user]
 	name = JP Whidden
+	email = john.p.whidden@ge.com
 [gui]
 	historybrowser = gitk
 	editor = emacs

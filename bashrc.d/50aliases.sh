@@ -26,6 +26,9 @@ if which -i &>/dev/null; then
 fi
 alias proxy-off='unset http_proxy https_proxy no_proxy'
 alias strip-trailing=sed\ -i\ 's/[[:space:]]*$//'
+alias cmake=cmake28
+alias ccmake=ccmake28
+alias cmake-gui=cmake28-gui
 maybe_alias yum-no-proxy-env 'env -u http_proxy -u https_proxy yum' yum
 maybe_alias xo xdg-open
 maybe_alias eamacs emacs

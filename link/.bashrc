@@ -7,7 +7,7 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-if [[ "$OSTYPE" =~ ^darwin ]]; then
+if [[ "$OSTYPE" =~ linux-gnu ]]; then
     if [ -d ~/.dotfiles/profile.d ]; then
         for sh_file in ~/.dotfiles/profile.d/*.sh; do
             if [ -r $sh_file ]; then
@@ -27,3 +27,6 @@ if [ -d ~/.dotfiles/bashrc.d ]; then
     done
     unset sh_file
 fi
+
+# Disable terminal flow control for interactive shells
+[[ $- == *i* ]] && stty -ixon
