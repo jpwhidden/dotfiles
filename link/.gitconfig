@@ -23,7 +23,7 @@
 	email = john.p.whidden@ge.com
 [gui]
 	historybrowser = gitk
-	editor = emacs
+	editor = vim
 [alias]
         st = status
 	ci = commit
@@ -46,6 +46,7 @@
 	intercommit = !sh -c 'interdiff <(git show $1) <(git show $2) | less -FRS' -
 [core]
 	excludesfile = ~/.dotfiles/conf/.gitignore_global
+	editor = vim
 [color]
 	branch = auto
 	diff = auto
