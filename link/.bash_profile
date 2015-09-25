@@ -4,4 +4,5 @@
 # interacive login shell.
 [ -r ~/.bashrc ] && . ~/.bashrc
 
+#fink (mac)
 test -r /sw/bin/init.sh && . /sw/bin/init.sh
