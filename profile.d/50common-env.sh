@@ -12,10 +12,10 @@ PATH=$PATH:$HOME/bin:$HOME/git/nemo_mfg:$HOME/git/nemo_tracker_fw/tutils:$HOME/g
 export PATH
 
 # set EDITOR to the best editor we can find on the system
-preferred_editors="emacs"
+preferred_editors="vim"
 # gedit will suffice if we have a graphical display
 [ ! -z $DISPLAY ] && preferred_editors="${preferred_editors} gedit"
-preferred_editors="${preferred_editors} nano pico vim vi"
+preferred_editors="${preferred_editors} nano pico vi"
 
 # TODO Preferred editor for OS X? subl?
 #if [[ ! "$SSH_TTY" && "$OSTYPE" =~ ^darwin ]]; then
