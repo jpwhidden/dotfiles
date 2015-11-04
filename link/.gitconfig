@@ -25,6 +25,7 @@
 	historybrowser = gitk
 	editor = vim
 [alias]
+    dd = difftool -d
         st = status
 	ci = commit
 	br = branch
@@ -64,23 +65,10 @@
 [rerere]
 	enabled = true
 
-#
-# BeyondCompare 3 as the diff/merge tool
-#
-# The built-in "b3c" difftool configuration is missing important bcompare flags:
-#
-#   -solo option is required to launch a seperate process (not reuse an existing
-#   bcompare process that might be open)
-#   -expandall option is a convenience to automatically expand all directories
-#
-[difftool "bc3"]
-	cmd = bcompare -expandall -solo \"$LOCAL\" \"$REMOTE\"
 [merge]
-	tool = bc3
+	tool = meld
 [diff]
-	tool = bc3
-[difftool]
-	bc3 = trustExitCode
+	tool = meld
 [sendemail]
 	thread = false
 [credential]
