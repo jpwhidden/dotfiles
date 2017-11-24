@@ -7,7 +7,7 @@ if [ -d ${HOME}/.local/bin ] ; then
     export PATH="${HOME}/.local/bin:$PATH"
 fi
 
-PATH=$PATH:$HOME/bin:$HOME/git/nemo_mfg:$HOME/git/nemo_tracker_fw/tutils:$HOME/git/elite2/Workstation/superbuild-release/Elite2-build/bin
+PATH=$PATH:$HOME/bin:$HOME/.dotfiles/bin
 
 export PATH
 
