@@ -4,13 +4,19 @@ sudo systemctl disable serial-getty@ttyS0.service
 vi /boot/cmdline.txt, remove "console=serial0,115200"
 reboot
 
-git clone https://github.com/LowPowerLab/avrdude-rpi
-edit paths in install script, install
-
 set obconf for multiple desktops
 enable switching in "vi ~/.config/openbox/lxde-pi-rc.xml"
 
 git clone https://github.com/LowPowerLab/RFM69
 git clone https://github.com/LowPowerLab/SPIFlash
 unzip u8glib_arduino_v1.18.1.zip
+
+raspi-config:
+reconfigure to US keyboard (from UK)
+disable overscan
+
+git clone https://github.com/twam/v4l2grab.git
+autogen.sh
+configure
+make
 
