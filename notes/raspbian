@@ -1,6 +1,8 @@
-Add "dtoverlay=pi3-disable-bt" to /boot/config.txt
-sudo systemctl disable hciuart
+Add "enable_uart=1" to /boot/config.txt
+sudo systemctl stop serial-getty@ttyS0.service
+sudo systemctl disable serial-getty@ttyS0.service
 vi /boot/cmdline.txt, remove "console=serial0,115200"
+reboot
 
 git clone https://github.com/LowPowerLab/avrdude-rpi
 edit paths in install script, install
