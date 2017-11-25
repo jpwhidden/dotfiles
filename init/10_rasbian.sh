@@ -7,4 +7,4 @@ sudo apt-get -qq update
 
 # Install APT packages.
 e_header "Installing APT packages"
-sudo apt-get install git-core git-gui tree nmap htop tmux mdadm lvm2 vim arduino obconf
+sudo apt-get install git-core git-gui tree nmap htop tmux mdadm lvm2 vim arduino obconf libjpeg-dev libv4l-dev autoconf automake
