@@ -20,3 +20,4 @@ autogen.sh
 configure
 make
 
+aws configure

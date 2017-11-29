@@ -30,3 +30,8 @@ fi
 
 # Disable terminal flow control for interactive shells
 [[ $- == *i* ]] && stty -ixon
+
+if [ -f /usr/local/bin/aws_completer ]; then
+    complete -C /usr/local/bin/aws_completer aws
+fi
+
