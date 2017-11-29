@@ -20,4 +20,9 @@ autogen.sh
 configure
 make
 
+if hdmi screen needs help:
+tvservice -d edid.dat
+edidparser edid.dat | grep 1080p
+(number in parenthesis indicates hdmi_mode in /boot/config.txt)
+
 aws configure
