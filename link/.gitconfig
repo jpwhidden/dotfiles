@@ -19,8 +19,8 @@
 [web]
 	browser = google-chrome
 [user]
-	name = JP Whidden
-	email = john.p.whidden@ge.com
+	name = John P Whidden
+	email = john@whidden.net
 [gui]
 	historybrowser = gitk
 	editor = vim
