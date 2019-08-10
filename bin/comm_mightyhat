@@ -1,3 +1,0 @@
-#!/bin/bash
-miniterm.py -b 19200 -D /dev/ttyS0
-
